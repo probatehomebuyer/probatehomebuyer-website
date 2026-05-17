@@ -1,18 +1,52 @@
-# Cloudflare Pages routing fixes for extensionless URLs
-# These force the SEO sub-pages to serve their own index.html files instead of falling back to the homepage.
+# Explicit Cloudflare Pages rewrites - every clean URL maps to its real index.html
+# This avoids wildcard/splat fallback issues.
 
 /about /about/index.html 200
+/areas-we-buy-in/barnet /areas-we-buy-in/barnet/index.html 200
+/areas-we-buy-in/birmingham /areas-we-buy-in/birmingham/index.html 200
+/areas-we-buy-in/bristol /areas-we-buy-in/bristol/index.html 200
+/areas-we-buy-in/croydon /areas-we-buy-in/croydon/index.html 200
+/areas-we-buy-in/enfield /areas-we-buy-in/enfield/index.html 200
+/areas-we-buy-in/essex /areas-we-buy-in/essex/index.html 200
+/areas-we-buy-in/hertfordshire /areas-we-buy-in/hertfordshire/index.html 200
+/areas-we-buy-in /areas-we-buy-in/index.html 200
+/areas-we-buy-in/kent /areas-we-buy-in/kent/index.html 200
+/areas-we-buy-in/leeds /areas-we-buy-in/leeds/index.html 200
+/areas-we-buy-in/leicester /areas-we-buy-in/leicester/index.html 200
+/areas-we-buy-in/liverpool /areas-we-buy-in/liverpool/index.html 200
+/areas-we-buy-in/london /areas-we-buy-in/london/index.html 200
+/areas-we-buy-in/manchester /areas-we-buy-in/manchester/index.html 200
+/areas-we-buy-in/milton-keynes /areas-we-buy-in/milton-keynes/index.html 200
+/areas-we-buy-in/nottingham /areas-we-buy-in/nottingham/index.html 200
+/areas-we-buy-in/reading /areas-we-buy-in/reading/index.html 200
+/areas-we-buy-in/sheffield /areas-we-buy-in/sheffield/index.html 200
+/areas-we-buy-in/southend /areas-we-buy-in/southend/index.html 200
+/areas-we-buy-in/surrey /areas-we-buy-in/surrey/index.html 200
+/areas-we-buy-in/watford /areas-we-buy-in/watford/index.html 200
+/blog/how-long-does-probate-take-uk-2026 /blog/how-long-does-probate-take-uk-2026/index.html 200
+/blog /blog/index.html 200
 /contact /contact/index.html 200
-/privacy-policy /privacy-policy/index.html 200
 /cookie-policy /cookie-policy/index.html 200
+/privacy-policy /privacy-policy/index.html 200
+/probate-guide/can-you-sell-before-probate /probate-guide/can-you-sell-before-probate/index.html 200
+/probate-guide/clearing-an-inherited-house /probate-guide/clearing-an-inherited-house/index.html 200
+/probate-guide/do-executors-need-to-agree /probate-guide/do-executors-need-to-agree/index.html 200
+/probate-guide/empty-inherited-property /probate-guide/empty-inherited-property/index.html 200
+/probate-guide/how-long-does-probate-take /probate-guide/how-long-does-probate-take/index.html 200
+/probate-guide /probate-guide/index.html 200
+/probate-guide/probate-property-valuation /probate-guide/probate-property-valuation/index.html 200
+/probate-guide/selling-a-house-in-probate /probate-guide/selling-a-house-in-probate/index.html 200
+/probate-guide/what-is-probate /probate-guide/what-is-probate/index.html 200
 /terms /terms/index.html 200
 /thank-you /thank-you/index.html 200
+/about.html /about/index.html 301
+/areas-we-buy-in.html /areas-we-buy-in/index.html 301
+/blog.html /blog/index.html 301
+/contact.html /contact/index.html 301
+/cookie-policy.html /cookie-policy/index.html 301
+/privacy-policy.html /privacy-policy/index.html 301
+/probate-guide.html /probate-guide/index.html 301
+/terms.html /terms/index.html 301
+/thank-you.html /thank-you/index.html 301
 
-/areas-we-buy-in /areas-we-buy-in/index.html 200
-/areas-we-buy-in/* /areas-we-buy-in/:splat/index.html 200
-
-/probate-guide /probate-guide/index.html 200
-/probate-guide/* /probate-guide/:splat/index.html 200
-
-/blog /blog/index.html 200
-/blog/* /blog/:splat/index.html 200
+/* /404.html 404
