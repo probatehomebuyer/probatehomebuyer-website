@@ -1,0 +1,18 @@
+# Cloudflare Pages routing fixes for extensionless URLs
+# These force the SEO sub-pages to serve their own index.html files instead of falling back to the homepage.
+
+/about /about/index.html 200
+/contact /contact/index.html 200
+/privacy-policy /privacy-policy/index.html 200
+/cookie-policy /cookie-policy/index.html 200
+/terms /terms/index.html 200
+/thank-you /thank-you/index.html 200
+
+/areas-we-buy-in /areas-we-buy-in/index.html 200
+/areas-we-buy-in/* /areas-we-buy-in/:splat/index.html 200
+
+/probate-guide /probate-guide/index.html 200
+/probate-guide/* /probate-guide/:splat/index.html 200
+
+/blog /blog/index.html 200
+/blog/* /blog/:splat/index.html 200
