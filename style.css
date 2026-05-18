@@ -209,3 +209,9 @@ h1, h2, h3, h4, .section-title h2, .hero h1, .form-card h2, .final-cta h2 {
     max-height: 66px !important;
   }
 }
+
+.whatsapp-chat .whatsapp-icon{width:32px;height:32px;display:block}
+
+.legal-content h3{margin-top:26px;color:var(--navy)}
+.legal-content p{margin:0 0 14px;line-height:1.75}
+.legal-content a{color:var(--navy);font-weight:800}
