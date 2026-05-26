@@ -223,3 +223,14 @@ h1, h2, h3, h4, .section-title h2, .hero h1, .form-card h2, .final-cta h2 {
 .mini-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:14px}.mini-steps div{background:#f8fafc;border-radius:16px;padding:18px}.mini-steps p{margin:8px 0 0!important;font-size:16px!important}.trust-guide-grid{grid-template-columns:repeat(4,1fr)}.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin:30px 0}.case-card{background:#fff;border:1px solid #e7edf2;border-radius:22px;padding:26px;box-shadow:0 10px 28px rgba(16,47,74,.06)}.case-card span{display:inline-block;background:var(--cream);color:var(--navy);border-radius:999px;padding:7px 12px;font-size:13px;font-weight:900;margin-bottom:12px}.case-card h3{margin-top:0}.case-card ul{margin-bottom:0}.whatsapp-chat{color:#fff}.whatsapp-chat .whatsapp-icon{width:32px;height:32px;display:block}
 @media(max-width:1000px){.trust-guide-grid{grid-template-columns:repeat(2,1fr)}.mini-steps{grid-template-columns:1fr}.case-grid{grid-template-columns:1fr}}
 @media(max-width:650px){.trust-guide-grid{grid-template-columns:1fr}}
+
+
+.transactions-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;margin-top:40px}
+.transaction-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:.3s}
+.transaction-card:hover{transform:translateY(-4px)}
+.transaction-card img{width:100%;height:240px;object-fit:cover;display:block}
+.transaction-content{padding:24px}
+.transaction-tag{display:inline-block;background:#0f2d52;color:#fff;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:14px}
+.transaction-content h3{margin:0 0 10px;font-size:24px;color:#0f2d52}
+.transaction-content p{margin:0;color:#555;line-height:1.7}
+.transactions-intro{max-width:850px;margin:0 auto;text-align:center}
