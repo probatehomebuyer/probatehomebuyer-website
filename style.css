@@ -250,3 +250,52 @@ body{background:linear-gradient(180deg,#ffffff 0%,#fbfcfe 100%);text-rendering:o
 .final-cta{background:linear-gradient(135deg,var(--navy) 0%,#071d33 100%)}footer{border-top:1px solid rgba(255,255,255,.08)}footer strong{color:#fff;font-size:18px}footer a:hover{color:var(--gold2)}.form-card input:focus,.form-card select:focus,.form-card textarea:focus{outline:3px solid rgba(212,166,79,.22);border-color:var(--gold)}
 @media(max-width:900px){.content-page{padding:24px;border-radius:22px}.trust-items div{text-align:left}.transaction-card-body p{min-height:0}.desktop-nav a:hover,.card:hover,.review-card:hover,.area-card:hover,.article-card:hover,.guide-card:hover,.case-card:hover,.transaction-card:hover{transform:none}.transaction-card:hover img{transform:none}}
 @media(max-width:430px){.content-page{padding:20px}.transaction-card-body{padding:20px}.review-strip{font-size:13px}}
+
+/* Visual refresh: option B image-led sections */
+.hero-visual-section{padding:34px 0 22px;background:#fff}
+.visual-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:28px;align-items:center}
+.visual-copy{background:linear-gradient(180deg,#fff 0%,#f8fbfd 100%);border:1px solid #e7edf2;border-radius:24px;padding:34px;box-shadow:0 14px 38px rgba(16,47,74,.08)}
+.visual-copy .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#eef5fb;color:#0b4f78;font-weight:900;font-size:13px;letter-spacing:.02em;text-transform:uppercase;margin-bottom:16px}
+.visual-copy h2{font-size:38px;line-height:1.08;margin:0 0 14px;color:var(--navy);letter-spacing:-1.2px}
+.visual-copy p{margin:0 0 14px;color:var(--muted);font-size:17px;line-height:1.62}
+.visual-copy .tick-list{margin-top:16px}
+.visual-copy .btn-primary{margin-top:10px}
+.visual-card{position:relative;overflow:hidden;border-radius:26px;box-shadow:0 18px 46px rgba(16,47,74,.14);min-height:420px;background:#dfe8ef}
+.visual-card img{width:100%;height:100%;display:block;object-fit:cover}
+.visual-card.tall{min-height:460px}
+.visual-tile-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:8px}
+.visual-tile{background:#fff;border:1px solid #e7edf2;border-radius:22px;overflow:hidden;box-shadow:0 12px 32px rgba(16,47,74,.07)}
+.visual-tile img{display:block;width:100%;height:220px;object-fit:cover}
+.visual-tile-content{padding:20px}
+.visual-tile-content h3{margin:0 0 8px;color:var(--navy);font-size:22px}
+.visual-tile-content p{margin:0;color:var(--muted);line-height:1.55}
+.visual-note-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:20px}
+.visual-note{background:#fff;border:1px solid #e7edf2;border-radius:18px;padding:18px;box-shadow:0 10px 26px rgba(16,47,74,.05)}
+.visual-note strong{display:block;color:var(--navy);font-size:18px;margin-bottom:6px}
+.visual-note span{display:block;color:var(--muted);line-height:1.5}
+.compact-section{padding-top:28px}
+@media (max-width:900px){
+  .hero-visual-section{padding:22px 0 12px}
+  .visual-split,.visual-tile-grid,.visual-note-grid{grid-template-columns:1fr}
+  .visual-copy{padding:24px 20px;border-radius:22px}
+  .visual-copy h2{font-size:31px}
+  .visual-copy p{font-size:16px}
+  .visual-card,.visual-card.tall{min-height:auto}
+  .visual-card img{height:auto;aspect-ratio:16/10}
+  .visual-tile img{height:auto;aspect-ratio:16/10}
+}
+@media (max-width:430px){
+  .visual-copy h2{font-size:28px}
+  .visual-note strong{font-size:17px}
+}
+
+/* Final polish: article dates and mobile readability */
+.article-date{display:inline-flex;align-items:center;gap:8px;margin:8px 0 18px;padding:8px 12px;border-radius:999px;background:#f4efe3;color:#72551d;font-weight:850;font-size:14px}
+.article-card .article-date{margin:0 0 10px;background:#f8f4e8;color:#6a4c17;font-size:13px}
+.content-page h2,.content-page h3{scroll-margin-top:110px}
+.content-page p{line-height:1.68}
+@media(max-width:900px){
+  .article-date{font-size:13px;margin-bottom:14px}
+  .content-page p{font-size:16px}
+  .hero .container{padding-left:0!important;padding-right:0!important}
+}
