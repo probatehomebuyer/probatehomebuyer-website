@@ -1465,3 +1465,61 @@ strong,b{
     margin-bottom:8px;
   }
 }
+
+
+/* Conversion refresh - postcode-first probate property offer flow */
+.conversion-hero .hero-grid{align-items:center;}
+.conversion-hero-grid{grid-template-columns:1.05fr .95fr;gap:44px;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;margin:0 0 14px!important;padding:8px 13px;border-radius:999px;background:rgba(215,181,109,.16);color:var(--gold2)!important;font-weight:900;font-size:14px!important;letter-spacing:.01em;text-transform:uppercase;}
+.hero-intro{max-width:720px;}
+.postcode-start-card{background:rgba(255,255,255,.96);border:1px solid rgba(255,255,255,.68);border-radius:24px;padding:20px;box-shadow:0 24px 70px rgba(0,0,0,.22);max-width:720px;margin:26px 0 22px;}
+.postcode-start-card label{display:block;color:var(--navy);font-weight:900;font-size:17px;margin-bottom:10px;}
+.postcode-row{display:grid;grid-template-columns:1fr auto;gap:10px;}
+.postcode-row input{min-height:60px;border:1px solid #d6e0e8;border-radius:16px;padding:0 18px;font:inherit;font-size:19px;font-weight:800;color:var(--navy);text-transform:uppercase;background:#fff;}
+.postcode-row button{border:0;border-radius:16px;background:var(--gold);color:var(--navy);font-family:'Manrope','Inter',Arial,sans-serif;font-weight:950;font-size:17px;padding:0 24px;cursor:pointer;box-shadow:0 12px 26px rgba(215,181,109,.26);}
+.postcode-start-card p{color:#3b4e61!important;font-size:14px!important;line-height:1.45!important;margin:12px 0 0!important;text-align:left!important;}
+.hero-checks-premium{grid-template-columns:1fr;max-width:700px;}
+.hero-side-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:32px;padding:18px;backdrop-filter:blur(10px);box-shadow:0 24px 70px rgba(0,0,0,.22);}
+.hero-side-card img{display:block;width:100%;height:auto;border-radius:24px;}
+.side-proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px;}
+.side-proof-grid div{background:#fff;border-radius:18px;padding:14px 10px;text-align:center;color:var(--navy);}
+.side-proof-grid strong{display:block;color:var(--gold);font-size:24px;line-height:1;}
+.side-proof-grid span{display:block;font-weight:850;font-size:13px;margin-top:5px;}
+.conversion-stats .stat strong{text-transform:none;}
+.offer-page-hero{padding:0;color:#fff;}
+.offer-page-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr .86fr;gap:42px;align-items:start;padding:72px 0;}
+.offer-page-copy h1{font-size:58px;line-height:1.02;margin:0 0 18px;letter-spacing:-2px;}
+.offer-page-copy p{font-size:20px;line-height:1.58;color:rgba(255,255,255,.88);max-width:730px;}
+.mini-trust-row{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0;}
+.mini-trust-row span{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.1);border-radius:999px;padding:10px 14px;font-weight:850;color:#fff;}
+.process-illustration{width:100%;max-width:680px;border-radius:26px;margin-top:18px;box-shadow:0 24px 70px rgba(0,0,0,.24);}
+.offer-form-card{position:sticky;top:126px;}
+.offer-form-card .optional-label{font-weight:700;color:var(--muted);font-size:13px;}
+.offer-form-card textarea{min-height:92px;}
+.offer-reassurance-section{background:#fff;}
+.reassurance-cards .card{border-top:4px solid var(--gold);}
+.footer-column a[href="/free-probate-property-offer/"]{font-weight:900;color:#fff;}
+/* Remove the old bottom sticky call bar on mobile; keep header phone icon and WhatsApp bubble only. */
+.mobile-sticky-call{display:none!important;}
+@media (max-width:900px){
+  .conversion-hero-grid,.offer-page-grid{grid-template-columns:1fr;gap:28px;}
+  .postcode-start-card{margin-left:auto;margin-right:auto;}
+  .postcode-row{grid-template-columns:1fr;}
+  .postcode-row button{min-height:58px;}
+  .hero-side-card{display:none;}
+  .offer-page-grid{padding:46px 0;}
+  .offer-page-copy h1{font-size:40px;text-align:center;}
+  .offer-page-copy p{text-align:center;font-size:18px;}
+  .offer-page-copy .breadcrumbs{text-align:center;}
+  .offer-page-copy .eyebrow{margin-left:auto!important;margin-right:auto!important;display:flex;width:max-content;}
+  .mini-trust-row{justify-content:center;}
+  .process-illustration{display:none;}
+  .offer-form-card{position:relative;top:auto;}
+  body{padding-bottom:0!important;}
+  footer{padding-bottom:42px!important;}
+}
+@media (max-width:430px){
+  .postcode-start-card{padding:16px;border-radius:20px;}
+  .postcode-row input{font-size:17px;}
+  .offer-page-copy h1{font-size:36px;}
+}
