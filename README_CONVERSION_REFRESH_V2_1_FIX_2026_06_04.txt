@@ -1,0 +1,1 @@
+Fixed Cloudflare too-many-redirect issue by creating /free-probate-property-offer/index.html and removing the conflicting _redirects rewrites. Improved postcode input/button responsive sizing so the Continue button does not sit off the card. Existing Web3Forms, thank-you redirect, GA4, Search Console tag, sitemap and internal links preserved.
