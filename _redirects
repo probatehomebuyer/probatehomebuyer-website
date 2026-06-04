@@ -144,7 +144,6 @@
 /thank-you /thank-you/ 301
 /thank-you.html /thank-you/ 301
 /thank-you/index.html /thank-you/ 301
-/free-probate-property-offer /free-probate-property-offer/ 301
-/free-probate-property-offer.html /free-probate-property-offer/ 301
-/free-probate-property-offer/index.html /free-probate-property-offer/ 301
 /* /404.html 404
+/free-probate-property-offer /free-probate-property-offer.html 200
+/free-probate-property-offer/ /free-probate-property-offer.html 200
