@@ -1488,3 +1488,11 @@ strong,b{
   .offer-detail-card .postcode-row{grid-template-columns:1fr;}
   .offer-detail-card .postcode-row button{width:100%;}
 }
+
+
+/* SEO/conversion additions 2026-06-05 */
+.seo-intent-section,.condition-section,.seller-intent-section{padding:72px 0}
+.seo-intent-section .related-links{margin-top:22px}
+.condition-section{background:#f7f4ed}
+.note{font-size:14px;color:#6b7280}
+@media(max-width:760px){.seo-intent-section,.condition-section,.seller-intent-section{padding:46px 0}}

@@ -145,3 +145,8 @@
 /thank-you.html /thank-you/ 301
 /thank-you/index.html /thank-you/ 301
 /* /404.html 404
+
+# Alias for June 2026 article wording - keep one canonical article URL
+/blog/sell-inherited-house-that-needs-work /blog/sell-inherited-house-needs-renovation/ 301
+/blog/sell-inherited-house-that-needs-work/ /blog/sell-inherited-house-needs-renovation/ 301
+/blog/sell-inherited-house-that-needs-work.html /blog/sell-inherited-house-needs-renovation/ 301
