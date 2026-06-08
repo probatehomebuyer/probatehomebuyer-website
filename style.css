@@ -1551,3 +1551,81 @@ strong,b{
   .offer-form-title{font-size:29px!important}
   .offer-detail-card{border-radius:22px!important;padding:22px!important}
 }
+
+/* Mobile homepage hero layout repair 2026-06-08
+   Keeps the postcode card below the headline on tablets/mobiles and stops it overlapping the hero copy. */
+@media(max-width:1050px){
+  .conversion-hero-inner{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:28px!important;
+    padding:54px 0 74px!important;
+  }
+  .conversion-copy{
+    max-width:720px!important;
+  }
+  .postcode-card{
+    width:100%!important;
+    max-width:680px!important;
+    margin:0 auto!important;
+    position:relative!important;
+    z-index:4!important;
+  }
+}
+@media(max-width:650px){
+  .conversion-hero{
+    min-height:auto!important;
+    align-items:flex-start!important;
+    overflow:visible!important;
+  }
+  .conversion-hero-inner{
+    padding:38px 0 58px!important;
+    gap:22px!important;
+  }
+  .conversion-copy h1{
+    font-size:34px!important;
+    line-height:1.08!important;
+    letter-spacing:-.04em!important;
+    margin:18px 0 14px!important;
+  }
+  .hero-lead,.conversion-copy p{
+    font-size:17px!important;
+    line-height:1.5!important;
+    margin-bottom:0!important;
+  }
+  .postcode-card{
+    width:100%!important;
+    max-width:none!important;
+    padding:22px 18px 26px!important;
+    border-radius:22px!important;
+    box-sizing:border-box!important;
+  }
+  .postcode-card-topline{
+    font-size:12px!important;
+    letter-spacing:.07em!important;
+    margin-bottom:10px!important;
+  }
+  .postcode-card h2{
+    font-size:26px!important;
+    line-height:1.1!important;
+  }
+  .postcode-card p{
+    font-size:15.5px!important;
+  }
+  .postcode-row{
+    grid-template-columns:1fr!important;
+  }
+  .postcode-row input,.postcode-row button{
+    width:100%!important;
+    height:56px!important;
+  }
+  .whatsapp-chat{
+    bottom:18px!important;
+    right:14px!important;
+    z-index:1500!important;
+  }
+}
+@media(max-width:390px){
+  .conversion-copy h1{font-size:31px!important;}
+  .postcode-card{padding-left:16px!important;padding-right:16px!important;}
+}
