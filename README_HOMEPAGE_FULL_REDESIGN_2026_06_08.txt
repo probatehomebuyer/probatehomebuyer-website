@@ -1,0 +1,1 @@
+Updated homepage with full desktop and mobile redesign, calm illustrated hero, cash offer postcode journey, improved icon benefit cards, and matching follow-through enquiry page design. Tracking, forms, URLs, Google verification tag, WhatsApp landline, sitemap and legal pages preserved.

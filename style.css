@@ -1552,80 +1552,9 @@ strong,b{
   .offer-detail-card{border-radius:22px!important;padding:22px!important}
 }
 
-/* Mobile homepage hero layout repair 2026-06-08
-   Keeps the postcode card below the headline on tablets/mobiles and stops it overlapping the hero copy. */
-@media(max-width:1050px){
-  .conversion-hero-inner{
-    display:grid!important;
-    grid-template-columns:1fr!important;
-    gap:28px!important;
-    padding:54px 0 74px!important;
-  }
-  .conversion-copy{
-    max-width:720px!important;
-  }
-  .postcode-card{
-    width:100%!important;
-    max-width:680px!important;
-    margin:0 auto!important;
-    position:relative!important;
-    z-index:4!important;
-  }
-}
-@media(max-width:650px){
-  .conversion-hero{
-    min-height:auto!important;
-    align-items:flex-start!important;
-    overflow:visible!important;
-  }
-  .conversion-hero-inner{
-    padding:38px 0 58px!important;
-    gap:22px!important;
-  }
-  .conversion-copy h1{
-    font-size:34px!important;
-    line-height:1.08!important;
-    letter-spacing:-.04em!important;
-    margin:18px 0 14px!important;
-  }
-  .hero-lead,.conversion-copy p{
-    font-size:17px!important;
-    line-height:1.5!important;
-    margin-bottom:0!important;
-  }
-  .postcode-card{
-    width:100%!important;
-    max-width:none!important;
-    padding:22px 18px 26px!important;
-    border-radius:22px!important;
-    box-sizing:border-box!important;
-  }
-  .postcode-card-topline{
-    font-size:12px!important;
-    letter-spacing:.07em!important;
-    margin-bottom:10px!important;
-  }
-  .postcode-card h2{
-    font-size:26px!important;
-    line-height:1.1!important;
-  }
-  .postcode-card p{
-    font-size:15.5px!important;
-  }
-  .postcode-row{
-    grid-template-columns:1fr!important;
-  }
-  .postcode-row input,.postcode-row button{
-    width:100%!important;
-    height:56px!important;
-  }
-  .whatsapp-chat{
-    bottom:18px!important;
-    right:14px!important;
-    z-index:1500!important;
-  }
-}
-@media(max-width:390px){
-  .conversion-copy h1{font-size:31px!important;}
-  .postcode-card{padding-left:16px!important;padding-right:16px!important;}
-}
+
+/* Homepage full redesign - 2026-06-08 */
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.home-redesign,.offer-redesign{background:#fff;color:#102437;overflow:hidden}.home-redesign svg,.offer-redesign svg{display:block}.home-redesign svg path,.home-redesign svg circle,.home-redesign svg rect,.offer-redesign svg path,.offer-redesign svg circle,.offer-redesign svg rect{vector-effect:non-scaling-stroke}.phb-hero-redesign,.phb-offer-hero{position:relative;min-height:760px;display:flex;align-items:center;background:#071b2d;overflow:hidden}.phb-hero-bg{position:absolute;inset:0;width:100%;height:100%;z-index:0}.phb-hero-content{position:relative;z-index:1;text-align:center;color:#fff;padding:82px 0 86px}.phb-kicker{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(215,173,69,.72);background:rgba(215,173,69,.10);color:#ffe4a0;border-radius:999px;padding:10px 22px;font-size:13px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.phb-hero-content h1{max-width:1000px;margin:28px auto 22px;color:#fff;font-size:clamp(52px,7vw,104px);line-height:1.02;font-weight:950;letter-spacing:-.035em;text-wrap:balance}.phb-hero-lead{max-width:820px;margin:0 auto;color:rgba(255,255,255,.91);font-size:24px;line-height:1.48;font-weight:550;text-wrap:balance}.phb-proof-row{display:flex;justify-content:center;align-items:center;gap:24px;flex-wrap:wrap;margin:30px 0 30px}.phb-proof-row span{display:inline-flex;gap:9px;align-items:center;color:#fff;font-weight:850}.phb-proof-row svg{width:18px;height:18px;fill:#f1cd6b;flex:0 0 auto}.phb-postcode-search{width:min(780px,100%);margin:0 auto;background:#fff;border-radius:18px;padding:10px;display:grid;grid-template-columns:1fr 180px;gap:10px;box-shadow:0 26px 70px rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.75)}.phb-input-wrap{display:flex;align-items:center;gap:15px;padding:0 18px}.phb-input-wrap svg{width:25px;height:25px;fill:#a88435;flex:0 0 auto}.phb-input-wrap input{height:58px;width:100%;border:0;outline:0;background:transparent;font-size:20px;font-weight:800;color:#142a3d}.phb-input-wrap input::placeholder{color:#82909e}.phb-postcode-search button,.phb-panel-btn,.phb-final-cta a,.phb-form-card .submit{border:0;border-radius:12px;background:linear-gradient(135deg,#d7ad45,#f1cd6b);color:#071b2d;font-weight:950;font-size:17px;cursor:pointer;text-align:center;display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 24px;text-decoration:none}.phb-micro{margin:18px 0 0;color:rgba(255,255,255,.84);font-weight:750}.phb-hero-benefits{margin:30px auto 0;max-width:840px;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(255,255,255,.22);border-radius:18px;background:rgba(255,255,255,.10);backdrop-filter:blur(8px);overflow:hidden}.phb-hero-benefits article{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"icon strong" "icon span";gap:2px 12px;text-align:left;padding:20px 22px;border-right:1px solid rgba(255,255,255,.20)}.phb-hero-benefits article:last-child{border-right:0}.phb-benefit-icon{grid-area:icon;width:42px;height:42px;border-radius:14px;background:rgba(215,173,69,.18);display:grid;place-items:center}.phb-benefit-icon svg{width:25px;height:25px;fill:none;stroke:#f1cd6b;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}.phb-hero-benefits strong{grid-area:strong;color:#fff;font-size:18px}.phb-hero-benefits span{grid-area:span;color:rgba(255,255,255,.78);font-size:14px;font-weight:650}.phb-process-section{background:#f8f4ec;padding:82px 0}.phb-process-section.compact{padding:70px 0}.phb-section-title{text-align:center;max-width:760px;margin:0 auto 42px}.phb-section-title span,.phb-eyebrow{display:inline-block;color:#a88435;font-size:13px;letter-spacing:.13em;text-transform:uppercase;font-weight:950;margin-bottom:12px}.phb-section-title h2,.phb-cash-section h2,.phb-areas-section h2{margin:0;color:#102437;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.035em}.phb-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.phb-steps article{position:relative;background:#fff;border:1px solid #eadfcb;border-radius:26px;padding:30px;box-shadow:0 14px 38px rgba(7,27,45,.07)}.phb-step-num{position:absolute;top:18px;right:20px;color:#d7ad45;font-weight:950;font-size:28px}.phb-step-icon{width:64px;height:64px;border-radius:22px;background:#102437;display:grid;place-items:center;margin-bottom:24px}.phb-step-icon svg{width:38px;height:38px;fill:none;stroke:#f1cd6b;stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round}.phb-steps h3{margin:0 0 10px;color:#102437;font-size:24px}.phb-steps p{margin:0;color:#607080;line-height:1.65}.phb-cash-section,.phb-areas-section{padding:92px 0;background:#fff}.phb-areas-section{background:#f7fbff}.phb-cash-grid{display:grid;grid-template-columns:minmax(0,1fr) 410px;gap:56px;align-items:center}.phb-cash-section p,.phb-areas-section p{font-size:19px;line-height:1.75;color:#607080}.phb-bullets{display:grid;gap:14px;margin-top:26px}.phb-bullets div{display:flex;align-items:flex-start;gap:12px;font-weight:800;color:#102437}.phb-bullets svg{width:22px;height:22px;fill:#d7ad45;flex:0 0 auto}.phb-offer-panel{border-radius:30px;background:linear-gradient(145deg,#102437,#071b2d);color:#fff;padding:38px;box-shadow:0 24px 70px rgba(7,27,45,.20)}.phb-offer-panel.light{background:#fff;color:#102437;border:1px solid #e3ebf2}.phb-offer-panel span{color:#f1cd6b;text-transform:uppercase;font-size:13px;letter-spacing:.13em;font-weight:950}.phb-offer-panel h3{font-size:32px;line-height:1.14;margin:14px 0 12px;color:inherit}.phb-offer-panel p{color:rgba(255,255,255,.78);font-size:17px}.phb-offer-panel.light p{color:#607080}.phb-panel-btn{margin-top:10px}.phb-situations-section{padding:88px 0;background:#f8f4ec}.phb-situation-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.phb-situation-grid article{background:#fff;border:1px solid #eadfcb;border-radius:22px;padding:26px}.phb-situation-grid h3{margin:0 0 10px;color:#102437}.phb-situation-grid p{margin:0;color:#607080;line-height:1.62}.phb-area-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.phb-area-links a{padding:12px 16px;border-radius:999px;background:#fff;border:1px solid #dbe5ee;color:#102437;font-weight:850}.phb-final-cta{padding:90px 0;text-align:center;background:#102437;color:#fff}.phb-final-cta h2{font-size:clamp(34px,4vw,58px);line-height:1.08;letter-spacing:-.035em;margin:0 0 14px;color:#fff}.phb-final-cta p{font-size:20px;color:rgba(255,255,255,.82);margin:0 auto 28px;max-width:680px}.phb-final-cta a{min-width:210px}.phb-offer-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,520px);gap:56px;align-items:start;padding:84px 0}.phb-offer-copy{color:#fff;padding-top:46px}.phb-offer-copy h1{font-size:clamp(44px,5vw,76px);line-height:1.02;color:#fff;letter-spacing:-.04em;margin:26px 0 22px}.phb-offer-copy p{font-size:21px;line-height:1.65;color:rgba(255,255,255,.88);max-width:640px}.phb-proof-list{display:grid;gap:14px;margin-top:28px}.phb-proof-list div{display:flex;gap:12px;align-items:flex-start;color:#fff;font-weight:850}.phb-proof-list svg{width:22px;height:22px;fill:#f1cd6b;flex:0 0 auto}.phb-form-card{background:#fff;border-radius:30px;padding:34px;box-shadow:0 28px 80px rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.55)}.phb-form-card>span{display:block;color:#a88435;text-transform:uppercase;letter-spacing:.13em;font-size:13px;font-weight:950;margin-bottom:10px}.phb-form-card h2{font-size:34px;line-height:1.1;color:#102437;margin:0 0 10px}.phb-form-card p{color:#607080;line-height:1.6;margin:0 0 22px}.phb-form-card .offer-detail-form{display:grid;gap:12px}.phb-form-card label{font-weight:850;color:#102437;font-size:14px}.phb-form-card input,.phb-form-card select,.phb-form-card textarea{width:100%;border:1px solid #dce6ee;border-radius:14px;min-height:52px;padding:12px 14px;font-size:16px;background:#fff;color:#102437}.phb-form-card textarea{min-height:100px;resize:vertical}.phb-form-card .consent-row{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;font-weight:500;color:#607080;font-size:13px;line-height:1.45}.phb-form-card .consent-row input{width:auto;min-height:auto;margin-top:3px}.phb-form-card .submit{width:100%;margin-top:4px}.phb-form-card .optional-label{color:#7b8794;font-weight:600}
+@media(max-width:980px){.phb-hero-redesign,.phb-offer-hero{min-height:auto}.phb-hero-content{padding:58px 0 66px}.phb-postcode-search{grid-template-columns:1fr}.phb-postcode-search button{width:100%}.phb-hero-benefits,.phb-steps,.phb-situation-grid,.phb-cash-grid,.phb-offer-grid{grid-template-columns:1fr}.phb-hero-benefits article{border-right:0;border-bottom:1px solid rgba(255,255,255,.18)}.phb-hero-benefits article:last-child{border-bottom:0}.phb-cash-grid,.phb-offer-grid{gap:32px}.phb-offer-copy{padding-top:0}.phb-offer-grid{padding:50px 0 64px}.phb-situation-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.phb-kicker{font-size:11px;padding:8px 14px;letter-spacing:.08em}.phb-hero-content h1{font-size:44px;letter-spacing:-.025em}.phb-hero-lead{font-size:18px}.phb-proof-row{gap:10px;margin:24px 0}.phb-proof-row span{width:100%;justify-content:center;font-size:14px}.phb-postcode-search{border-radius:16px;padding:9px}.phb-input-wrap{padding:0 10px}.phb-input-wrap input{font-size:17px;height:54px}.phb-postcode-search button{min-height:54px}.phb-hero-benefits{margin-top:24px}.phb-hero-benefits article{padding:16px}.phb-process-section,.phb-cash-section,.phb-areas-section,.phb-situations-section,.phb-final-cta{padding:54px 0}.phb-steps article,.phb-offer-panel,.phb-form-card{border-radius:22px;padding:24px}.phb-situation-grid{grid-template-columns:1fr}.phb-cash-grid{grid-template-columns:1fr}.phb-area-links a{width:calc(50% - 6px);text-align:center}.phb-offer-copy h1{font-size:42px}.phb-offer-copy p{font-size:18px}.phb-form-card h2{font-size:28px}.phb-offer-grid{grid-template-columns:1fr}.whatsapp-chat{bottom:18px!important}}
