@@ -2606,3 +2606,13 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
   color:#e7bd62!important;
   stroke:#e7bd62!important;
 }
+
+
+/* Properties purchased page cleanup - 2026-06-09 */
+.properties-purchased-page > h2:first-child{margin-top:0;}
+.properties-purchased-grid .transaction-card-body span{display:none!important;}
+.property-details{border-top:1px solid var(--phb-border, #e3ebf2);margin-top:16px;padding-top:14px;display:grid;gap:4px;}
+.property-details p{margin:0!important;min-height:0!important;color:#425466!important;font-size:14.5px!important;line-height:1.45!important;}
+.property-details strong{color:var(--navy,#102d4f);font-weight:800;}
+.properties-purchased-page .case-study-summary{background:#fff!important;border:1px solid var(--phb-border,#e3ebf2)!important;}
+@media(max-width:700px){.property-details{margin-top:14px;padding-top:12px}.property-details p{font-size:14px!important}}

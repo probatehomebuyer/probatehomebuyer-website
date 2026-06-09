@@ -1,0 +1,1 @@
+Updated /case-studies/ page content only: simplified the page into a clean Properties We Have Purchased proof page, removed pill labels, retained existing navigation/header/footer/tracking/SEO baseline and kept the existing /case-studies/ URL.
