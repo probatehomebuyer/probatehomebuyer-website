@@ -1,0 +1,1 @@
+Heading clarity fix added after the modern declutter pass. Purpose: keep the cleaner, modern typography but restore clearer heading contrast and hierarchy so H1/H2/H3 titles are easier to see on desktop and mobile. Preserve this in future updates unless a full redesign replaces the typography system.
