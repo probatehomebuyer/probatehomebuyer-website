@@ -111,9 +111,6 @@
 /probate-guide /probate-guide/ 301
 /probate-guide.html /probate-guide/ 301
 /probate-guide/index.html /probate-guide/ 301
-/probate-guide/can-you-sell-a-house-before-probate /probate-guide/can-you-sell-a-house-before-probate/ 301
-/probate-guide/can-you-sell-a-house-before-probate.html /probate-guide/can-you-sell-a-house-before-probate/ 301
-/probate-guide/can-you-sell-a-house-before-probate/index.html /probate-guide/can-you-sell-a-house-before-probate/ 301
 /probate-guide/can-you-sell-before-probate /probate-guide/can-you-sell-before-probate/ 301
 /probate-guide/can-you-sell-before-probate.html /probate-guide/can-you-sell-before-probate/ 301
 /probate-guide/can-you-sell-before-probate/index.html /probate-guide/can-you-sell-before-probate/ 301
@@ -144,9 +141,19 @@
 /thank-you /thank-you/ 301
 /thank-you.html /thank-you/ 301
 /thank-you/index.html /thank-you/ 301
-/* /404.html 404
+
+/sell-inherited-house /sell-inherited-house/ 301
+/sell-inherited-house.html /sell-inherited-house/ 301
+/sell-inherited-house/index.html /sell-inherited-house/ 301
+/sell-probate-property-needing-work /sell-probate-property-needing-work/ 301
+/sell-probate-property-needing-work.html /sell-probate-property-needing-work/ 301
+/sell-probate-property-needing-work/index.html /sell-probate-property-needing-work/ 301
+/blog/can-you-sell-probate-property-without-clearing-it /blog/can-you-sell-probate-property-without-clearing-it/ 301
+/blog/can-you-sell-probate-property-without-clearing-it.html /blog/can-you-sell-probate-property-without-clearing-it/ 301
+/blog/can-you-sell-probate-property-without-clearing-it/index.html /blog/can-you-sell-probate-property-without-clearing-it/ 301
 
 # Alias for June 2026 article wording - keep one canonical article URL
 /blog/sell-inherited-house-that-needs-work /blog/sell-inherited-house-needs-renovation/ 301
 /blog/sell-inherited-house-that-needs-work/ /blog/sell-inherited-house-needs-renovation/ 301
 /blog/sell-inherited-house-that-needs-work.html /blog/sell-inherited-house-needs-renovation/ 301
+/* /404.html 404
