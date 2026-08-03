@@ -2824,3 +2824,17 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
   .stage1-page .site-header .nav{min-height:78px!important;height:78px!important}
   .stage1-page .logo-img{height:68px!important;max-height:68px!important;max-width:145px!important}
 }
+
+.stage1-page .company-details-title{margin:2px 0 14px;color:#fff;font-family:Inter,Arial,sans-serif;font-size:13px;font-weight:800;letter-spacing:.02em;text-transform:uppercase}
+.stage1-home .phb-micro{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 18px;font-weight:700}
+.stage1-home .phb-micro span{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.stage1-home .phb-micro span::before{content:"✓";display:grid;width:20px;height:20px;place-items:center;border:1px solid rgba(224,177,70,.62);border-radius:50%;color:var(--s1-gold-light);font-size:12px;line-height:1}
+
+@media(min-width:981px){
+  .stage1-home .phb-micro{justify-content:flex-start;gap:8px 14px;font-size:13px}
+}
+
+@media(max-width:480px){
+  .stage1-home .phb-micro{align-items:flex-start;justify-content:flex-start;gap:9px}
+  .stage1-home .phb-micro span{width:100%}
+}
