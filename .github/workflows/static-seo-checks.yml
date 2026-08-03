@@ -1,0 +1,37 @@
+name: Static SEO checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile SEO scripts
+        run: python -m compileall -q scripts/seo
+      - name: Run SEO automation unit tests
+        run: python -m unittest discover -s scripts/seo -p 'test_*.py'
+      - name: Validate the static site
+        run: python scripts/seo/site_audit.py --root . --output-dir seo-output --fail-on errors
+      - name: Publish audit summary
+        if: always()
+        run: |
+          if [ -f seo-output/technical-seo-audit.md ]; then
+            cat seo-output/technical-seo-audit.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Upload audit details
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: static-seo-audit-${{ github.run_id }}
+          path: seo-output/
+          retention-days: 14
