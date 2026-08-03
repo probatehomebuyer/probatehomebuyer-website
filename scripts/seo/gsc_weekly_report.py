@@ -23,6 +23,7 @@ EXCLUDED_TERMS = (
     "for sale", "buy probate", "probate houses to buy", "investment", "investor leads",
     "solicitor", "lawyer", "jobs", "career", "salary", "training", "course",
 )
+BRAND_TERMS = ("probate home buyer", "probatehomebuyer", "incor property")
 STOPWORDS = {"a", "an", "and", "are", "can", "do", "for", "how", "in", "is", "it", "of", "on", "the", "to", "uk", "what", "when", "with"}
 
 
@@ -133,6 +134,11 @@ def intent(query: str) -> str:
     return "general informational"
 
 
+def is_branded(query: str) -> bool:
+    value = query.lower().strip()
+    return any(term in value for term in BRAND_TERMS)
+
+
 def best_content_match(query: str, inventory: list[dict[str, Any]]) -> tuple[dict[str, Any] | None, float]:
     query_terms = terms(query)
     if not query_terms: return None, 0.0
@@ -211,6 +217,13 @@ def internal_link_suggestions(opportunities: list[dict[str, Any]], inventory: li
     return suggestions[:8]
 
 
+def homepage_query_diagnostic(rows: list[dict[str, Any]]) -> tuple[dict[str, float], dict[str, float], list[dict[str, Any]]]:
+    homepage_rows = [row for row in rows if row.get("page", "").rstrip("/") == "https://probatehomebuyer.co.uk"]
+    branded = aggregate([row for row in homepage_rows if is_branded(row.get("query", ""))])
+    non_branded = aggregate([row for row in homepage_rows if not is_branded(row.get("query", ""))])
+    return branded, non_branded, sorted(homepage_rows, key=lambda row: row["impressions"], reverse=True)
+
+
 def report_markdown(site_url: str, current_period: Period, previous_period: Period, datasets: dict[str, list[dict[str, Any]]], inventory: list[dict[str, Any]]) -> str:
     current_total, previous_total = aggregate(datasets["totals_current"]), aggregate(datasets["totals_previous"])
     opportunities = opportunity_rows(datasets["queries_current"], datasets["queries_previous"], inventory)
@@ -260,6 +273,12 @@ def report_markdown(site_url: str, current_period: Period, previous_period: Peri
     lines.extend(f"| `{source}` | `{target}` | {query} |" for source, target, query in link_suggestions)
     if not link_suggestions: lines.append("| — | — | No sufficiently relevant missing link identified |")
     lines.extend(["", "Add a link only where it genuinely helps the reader; do not create sitewide or keyword-stuffed links.", "", "A proposed new topic must pass the content-inventory overlap check and human review."])
+    branded, non_branded, homepage_rows = homepage_query_diagnostic(datasets.get("query_pages_current", []))
+    lines.extend(["", "## Homepage query diagnostic", "", "| Segment | Clicks | Impressions | CTR | Average position |", "|---|---:|---:|---:|---:|", f"| Branded | {branded['clicks']:.0f} | {branded['impressions']:.0f} | {branded['ctr']:.1%} | {branded['position']:.1f} |", f"| Non-branded | {non_branded['clicks']:.0f} | {non_branded['impressions']:.0f} | {non_branded['ctr']:.1%} | {non_branded['position']:.1f} |", "", "### Highest-impression homepage queries", "", "| Query | Segment | Clicks | Impressions | CTR | Position |", "|---|---|---:|---:|---:|---:|"])
+    for row in homepage_rows[:20]:
+        segment = "branded" if is_branded(row["query"]) else "non-branded"
+        lines.append(f"| {row['query']} | {segment} | {row['clicks']:.0f} | {row['impressions']:.0f} | {row['ctr']:.1%} | {row['position']:.1f} |")
+    if not homepage_rows: lines.append("| — | — | 0 | 0 | — | — |")
     lines.extend(["", "### Device breakdown", "", "| Device | Clicks | Impressions | CTR | Position |", "|---|---:|---:|---:|---:|"])
     lines.extend(f"| {row['device']} | {row['clicks']:.0f} | {row['impressions']:.0f} | {row['ctr']:.1%} | {row['position']:.1f} |" for row in device_rows)
     lines.extend(["", "## Safeguards", "", "- This report does not edit, publish or merge website content.", "- Search Console rows are retained only as a workflow artifact under the configured retention period.", "- Any content recommendation requires human review and a separate pull request.", ""])
@@ -285,6 +304,7 @@ def main() -> int:
             ("totals_current", [], current), ("totals_previous", [], previous),
             ("queries_current", ["query"], current), ("queries_previous", ["query"], previous),
             ("pages_current", ["page"], current), ("pages_previous", ["page"], previous),
+            ("query_pages_current", ["query", "page"], current), ("query_pages_previous", ["query", "page"], previous),
             ("devices_current", ["device"], current), ("devices_previous", ["device"], previous),
         ):
             datasets[name] = normalise(fetch_rows(service, site_url, period, dimensions), dimensions)

@@ -44,12 +44,15 @@ class SeoAutomationTests(unittest.TestCase):
             "queries_previous": [{"query": "sell inherited house", **metric}],
             "pages_current": [{"page": "https://probatehomebuyer.co.uk/sell-inherited-house/", **metric}],
             "pages_previous": [{"page": "https://probatehomebuyer.co.uk/sell-inherited-house/", **metric}],
+            "query_pages_current": [{"query": "sell inherited house", "page": "https://probatehomebuyer.co.uk/", **metric}],
+            "query_pages_previous": [],
             "devices_current": [{"device": "MOBILE", **metric}], "devices_previous": [],
         }
         inventory = [{"url": "/sell-inherited-house/", "title": "Sell an inherited house", "description": "Direct inherited house sale", "h1s": ["Sell an inherited house"], "intent": "commercial seller intent", "internal_links": []}]
         report = report_markdown("sc-domain:probatehomebuyer.co.uk", Period(date(2026, 7, 4), date(2026, 7, 31)), Period(date(2026, 6, 6), date(2026, 7, 3)), datasets, inventory)
         self.assertIn("## Primary recommendation", report)
         self.assertIn("### Internal-linking opportunities", report)
+        self.assertIn("## Homepage query diagnostic", report)
         self.assertIn("Search Console property", report)
 
 
