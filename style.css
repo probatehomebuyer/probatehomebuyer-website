@@ -2954,3 +2954,7 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 @media(max-width:600px){.stage2-location main>section.final-cta{padding:44px 0!important}.stage2-location .final-cta .btn-primary{width:100%;padding-right:18px;padding-left:18px;text-align:center}}
 
 .stage2-page .faq-hub-intro+.faq-card-grid{margin-top:28px}
+
+.stage2-form .phb-form-card h2,.stage2-form .compact-offer-form h2{color:#0b243d!important;text-shadow:none!important}
+.stage2-form .phb-form-card>p,.stage2-form .compact-offer-form>p{color:#526a7d!important}
+.stage2-form .phb-form-card>span,.stage2-form .compact-offer-form>span{color:#9b6f19!important}
