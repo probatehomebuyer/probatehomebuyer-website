@@ -2994,3 +2994,8 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-page .blog-section-heading p{max-width:700px;margin:10px 0 0!important;text-align:left!important}
 .stage2-page .blog-card-grid{margin-top:0!important;padding-top:40px!important}
 @media(max-width:760px){.stage2-page .blog-section-heading{margin-top:30px!important;padding-top:38px!important}.stage2-page .blog-section-heading::before{bottom:-36px}.stage2-page .blog-card-grid{margin-top:0!important;padding-top:30px!important}}
+
+/* One consistent article date and hero treatment across every blog post. */
+.stage2-article .hero .article-date{display:block;width:auto;margin:0 0 18px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:#f1c964!important;font-size:14px!important;font-weight:750;line-height:1.4;letter-spacing:.02em}
+.stage2-article .hero .article-date::before{content:""}
+.stage2-article .blog-content{width:min(100%,790px);margin-right:auto;margin-left:auto}
