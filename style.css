@@ -2918,3 +2918,4 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-page details>summary .faq-plus{margin-left:auto;flex:0 0 30px}
 @media(max-width:1100px){.stage2-service .seo-service-grid{grid-template-columns:minmax(0,1fr)!important;max-width:800px;gap:34px}.stage2-service .seo-service-sidebar{position:static!important;width:100%;max-width:none}.stage2-service .seo-service-sidebar ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 22px}}
 @media(max-width:600px){.stage2-service .seo-service-sidebar ul{grid-template-columns:1fr}.stage2-page details>summary{padding:18px;font-size:16px;line-height:1.35}.stage2-page .faq-content{padding-right:18px;padding-left:18px}}
+@media(max-width:1180px){.stage2-page .mobile-toggle{flex-direction:column;gap:5px}.stage2-page .mobile-toggle span{display:block;width:25px;height:3px;border-radius:99px;background:#08283b}}
