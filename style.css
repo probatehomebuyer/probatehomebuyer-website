@@ -2964,11 +2964,6 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-home .phb-process-section .phb-section-title{width:100%!important;max-width:1040px!important;margin-right:auto;margin-left:auto;text-align:left}
 .stage2-home .phb-process-section .phb-section-title p{max-width:720px;margin-right:0;margin-left:0}
 
-.stage2-service .hero.image-hero>.container{align-items:center!important;text-align:center}
-.stage2-service .hero.image-hero h1,.stage2-service .hero.image-hero p{margin-right:auto!important;margin-left:auto!important}
-.stage2-service .hero.image-hero .breadcrumbs{align-self:center}
-.stage2-service .hero.image-hero .offer-panel{align-self:center}
-
 /* Use full-width sections with contained content, matching the homepage. */
 .stage2-page .content-page,.stage2-form main>section:not(.hero):not(.page-trust-strip)>.container.panel{padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
 .stage2-page .content-page>.panel,.stage2-page .content-page>.form-card{border-radius:18px}
