@@ -2976,3 +2976,9 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-service .seo-service-grid{grid-template-columns:minmax(0,1fr)!important;max-width:1040px!important}
 .stage2-service .content-page article{width:100%;max-width:none!important}
 .stage2-service .content-page article>p,.stage2-service .content-page article>ul,.stage2-service .content-page article>ol{max-width:780px}
+
+.stage2-service .faq-item{margin-bottom:12px;overflow:hidden}
+.stage2-service .faq-item:not([open]) .faq-content{display:none!important}
+.stage2-service .faq-item[open] .faq-content{display:block!important;padding:18px 22px 22px!important;border-top:1px solid #e6e0d4}
+.stage2-service .faq-item[open] .faq-content p{margin:0!important;max-width:900px}
+.stage2-service .disclaimer-box{max-width:1040px!important;margin:24px 0 0!important;padding:18px 20px!important;border:0!important;border-left:4px solid #ddb249!important;border-radius:0 12px 12px 0!important;background:#f7f1df!important;box-shadow:none!important}
