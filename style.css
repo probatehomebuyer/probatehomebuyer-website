@@ -2958,3 +2958,6 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-form .phb-form-card h2,.stage2-form .compact-offer-form h2{color:#0b243d!important;text-shadow:none!important}
 .stage2-form .phb-form-card>p,.stage2-form .compact-offer-form>p{color:#526a7d!important}
 .stage2-form .phb-form-card>span,.stage2-form .compact-offer-form>span{color:#9b6f19!important}
+
+.stage2-home .phb-situations-section .phb-section-title{max-width:none;margin-right:0;margin-left:0;text-align:left}
+.stage2-home .phb-situations-section .phb-section-title p{max-width:720px;margin-right:0;margin-left:0}
