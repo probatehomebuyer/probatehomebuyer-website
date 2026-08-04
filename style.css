@@ -2905,3 +2905,16 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-page:not(.stage2-home) .page-trust-strip+.hero{margin-top:0}
 .stage2-page:not(.stage2-home) main>section+section:not(.page-trust-strip){padding-top:64px;padding-bottom:72px}
 @media(max-width:760px){.stage2-page:not(.stage2-home) .hero.image-hero>.container{min-height:0;padding-top:42px!important;padding-bottom:44px!important}.stage2-page:not(.stage2-home) .hero.image-hero h1{font-size:clamp(34px,10vw,44px)!important;line-height:1.06!important}.stage2-page:not(.stage2-home) .hero.image-hero p{font-size:16px!important;line-height:1.55!important}.stage2-page:not(.stage2-home) .hero.image-hero .offer-panel{display:block;width:100%}.stage2-page:not(.stage2-home) .hero.image-hero .offer-panel a{width:100%!important;white-space:normal}.stage2-page:not(.stage2-home) main>section+section:not(.page-trust-strip){padding-top:46px;padding-bottom:54px}}
+
+/* Shared-component alignment and contrast fixes. */
+.stage2-page .content-page,.stage2-page section>.container.panel,.stage2-page .seo-service-grid{margin-right:auto;margin-left:auto}
+.stage2-page .seo-service-grid{width:min(100%,1040px)}
+.stage2-page .seo-service-sidebar .btn,.stage2-page .seo-service-sidebar>a:last-child{display:flex;width:100%;min-height:50px;align-items:center;justify-content:center;margin-top:22px;padding:12px 18px;border-radius:12px;background:#ddb249;color:#08283b;font-weight:850;text-align:center;text-decoration:none}
+.stage2-page .seo-cta-strip h2,.stage2-page .seo-cta-strip h3,.stage2-page .seo-cta-strip p,.stage2-page .guide-cta-panel h2,.stage2-page .guide-cta-panel h3,.stage2-page .guide-cta-panel p{color:#fff!important}
+.stage2-page .seo-cta-strip .btn,.stage2-page .guide-cta-panel a{color:#08283b!important}
+.stage2-page details>summary{display:flex;align-items:center;gap:12px;list-style:none}
+.stage2-page details>summary::-webkit-details-marker{display:none}
+.stage2-page details>summary::marker{content:""}
+.stage2-page details>summary .faq-plus{margin-left:auto;flex:0 0 30px}
+@media(max-width:1100px){.stage2-service .seo-service-grid{grid-template-columns:minmax(0,1fr)!important;max-width:800px;gap:34px}.stage2-service .seo-service-sidebar{position:static!important;width:100%;max-width:none}.stage2-service .seo-service-sidebar ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 22px}}
+@media(max-width:600px){.stage2-service .seo-service-sidebar ul{grid-template-columns:1fr}.stage2-page details>summary{padding:18px;font-size:16px;line-height:1.35}.stage2-page .faq-content{padding-right:18px;padding-left:18px}}
