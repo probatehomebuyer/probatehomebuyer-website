@@ -2943,3 +2943,5 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-home .phb-situation-card h3{margin:0 0 12px;color:#0b243d}.stage2-home .phb-situation-card p{margin:0;color:#526a7d}
 .stage2-home .phb-situation-card:hover{transform:translateY(-3px);border-color:#ddb249;box-shadow:0 16px 40px rgba(9,42,61,.11)}
 .stage2-home .phb-situation-card:focus-visible{outline:3px solid #ddb249;outline-offset:4px}
+
+@media(min-width:1101px) and (max-width:1280px){.stage2-page .site-header .nav{min-height:88px!important;height:88px!important;gap:14px}.stage2-page .logo-img{height:76px!important;max-height:76px!important;max-width:155px!important}.stage2-page .desktop-nav{display:flex!important;gap:11px!important}.stage2-page .desktop-nav a{font-size:12px!important;white-space:nowrap}.stage2-page .desktop-phone{display:none!important}.stage2-page .mobile-actions{display:none!important}.stage2-page .mobile-menu{display:none!important}}
