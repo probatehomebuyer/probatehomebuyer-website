@@ -2968,3 +2968,7 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-service .hero.image-hero h1,.stage2-service .hero.image-hero p{margin-right:auto!important;margin-left:auto!important}
 .stage2-service .hero.image-hero .breadcrumbs{align-self:center}
 .stage2-service .hero.image-hero .offer-panel{align-self:center}
+
+/* Use full-width sections with contained content, matching the homepage. */
+.stage2-page .content-page,.stage2-form main>section:not(.hero):not(.page-trust-strip)>.container.panel{padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.stage2-page .content-page>.panel,.stage2-page .content-page>.form-card{border-radius:18px}
