@@ -2999,3 +2999,5 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-article .hero .article-date{display:block;width:auto;margin:0 0 18px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;color:#f1c964!important;font-size:14px!important;font-weight:750;line-height:1.4;letter-spacing:.02em}
 .stage2-article .hero .article-date::before{content:""}
 .stage2-article .blog-content{width:min(100%,790px);margin-right:auto;margin-left:auto}
+.stage2-article .hero .offer-panel{display:none!important}
+.stage2-article .blog-content>.note{margin-top:42px;padding-top:22px;border-top:1px solid #ded8cb;color:#607384;font-size:14px;line-height:1.65}
