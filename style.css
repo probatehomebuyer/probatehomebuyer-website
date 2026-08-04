@@ -2972,3 +2972,7 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 /* Use full-width sections with contained content, matching the homepage. */
 .stage2-page .content-page,.stage2-form main>section:not(.hero):not(.page-trust-strip)>.container.panel{padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
 .stage2-page .content-page>.panel,.stage2-page .content-page>.form-card{border-radius:18px}
+
+.stage2-service .seo-service-grid{grid-template-columns:minmax(0,1fr)!important;max-width:1040px!important}
+.stage2-service .content-page article{width:100%;max-width:none!important}
+.stage2-service .content-page article>p,.stage2-service .content-page article>ul,.stage2-service .content-page article>ol{max-width:780px}
