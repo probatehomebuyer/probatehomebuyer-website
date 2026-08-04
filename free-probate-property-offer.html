@@ -194,4 +194,23 @@ gtag('config', 'G-3FVLXTZBJ8');
   if (pc && field && !field.value) field.value = pc;
 })();
 </script>
-</body></html>
+<script>
+(function(){
+  var form = document.querySelector('.offer-detail-form');
+  if (!form) return;
+  form.addEventListener('submit', function(){
+    if (typeof gtag === 'function') {
+      gtag('event', 'form_submit', {
+        form_name: 'probate_property_offer',
+        transport_type: 'beacon'
+      });
+    }
+  });
+})();
+</script><div class="cookie-banner" id="cookie-banner">
+<p>We use cookies to improve your experience, understand website traffic and measure advertising performance. See our <a href="/cookie-policy">Cookie Policy</a>.</p>
+<button onclick="localStorage.setItem('cookiesAccepted','yes');document.getElementById('cookie-banner').style.display='none'">Accept</button>
+</div>
+<script>
+if(!localStorage.getItem('cookiesAccepted')){document.getElementById('cookie-banner').style.display='flex';}
+</script></body></html>
