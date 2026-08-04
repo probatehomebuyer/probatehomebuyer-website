@@ -2977,3 +2977,11 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-service .faq-item[open] .faq-content{display:block!important;padding:18px 22px 22px!important;border-top:1px solid #e6e0d4}
 .stage2-service .faq-item[open] .faq-content p{margin:0!important;max-width:900px}
 .stage2-service .disclaimer-box{max-width:1040px!important;margin:24px 0 0!important;padding:18px 20px!important;border:0!important;border-left:4px solid #ddb249!important;border-radius:0 12px 12px 0!important;background:#f7f1df!important;box-shadow:none!important}
+
+/* Inner pages use homepage-style full-width colour bands. */
+.stage2-page .faq-hub-intro,.stage2-page .blog-intro-panel,.stage2-page .case-study-summary{padding-right:0!important;padding-left:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.stage2-page .faq-card-grid,.stage2-page .blog-card-grid,.stage2-page .properties-purchased-grid,.stage2-service .seo-card-grid{position:relative;z-index:0;margin-top:48px!important;margin-bottom:48px!important;padding-top:56px!important;padding-bottom:56px!important}
+.stage2-page .faq-card-grid::before,.stage2-page .blog-card-grid::before,.stage2-page .properties-purchased-grid::before,.stage2-service .seo-card-grid::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#fff}
+.stage2-service .seo-cta-strip{position:relative;z-index:0;margin:56px 0!important;padding:48px 0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.stage2-service .seo-cta-strip::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#092c41}
+@media(max-width:760px){.stage2-page .faq-card-grid,.stage2-page .blog-card-grid,.stage2-page .properties-purchased-grid,.stage2-service .seo-card-grid{margin-top:36px!important;margin-bottom:36px!important;padding-top:40px!important;padding-bottom:40px!important}.stage2-service .seo-cta-strip{margin:42px 0!important;padding:40px 0!important}}
