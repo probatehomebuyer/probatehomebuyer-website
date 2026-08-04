@@ -2945,3 +2945,10 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-home .phb-situation-card:focus-visible{outline:3px solid #ddb249;outline-offset:4px}
 
 @media(min-width:1101px) and (max-width:1280px){.stage2-page .site-header .nav{min-height:88px!important;height:88px!important;gap:14px}.stage2-page .logo-img{height:76px!important;max-height:76px!important;max-width:155px!important}.stage2-page .desktop-nav{display:flex!important;gap:11px!important}.stage2-page .desktop-nav a{font-size:12px!important;white-space:nowrap}.stage2-page .desktop-phone{display:none!important}.stage2-page .mobile-actions{display:none!important}.stage2-page .mobile-menu{display:none!important}}
+
+.stage2-location main>section.final-cta{padding:56px 0!important;background:#092c41!important;text-align:center}
+.stage2-location .final-cta .container{max-width:820px;margin-right:auto;margin-left:auto}
+.stage2-location .final-cta h2{margin:0 0 14px!important;color:#fff!important}
+.stage2-location .final-cta p{max-width:680px;margin:0 auto 24px!important;color:#e5edf1!important;font-size:17px;line-height:1.6}
+.stage2-location .final-cta .btn-primary{display:inline-flex;min-height:52px;align-items:center;justify-content:center;padding:0 24px;border-radius:12px;background:#ddb249;color:#08283b;font-weight:850;text-decoration:none}
+@media(max-width:600px){.stage2-location main>section.final-cta{padding:44px 0!important}.stage2-location .final-cta .btn-primary{width:100%;padding-right:18px;padding-left:18px;text-align:center}}
