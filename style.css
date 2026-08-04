@@ -2985,3 +2985,12 @@ main > section:not(.hero):not(.page-trust-strip):not(.final-cta):not(.trust-stri
 .stage2-service .seo-cta-strip{position:relative;z-index:0;margin:56px 0!important;padding:48px 0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
 .stage2-service .seo-cta-strip::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#092c41}
 @media(max-width:760px){.stage2-page .faq-card-grid,.stage2-page .blog-card-grid,.stage2-page .properties-purchased-grid,.stage2-service .seo-card-grid{margin-top:36px!important;margin-bottom:36px!important;padding-top:40px!important;padding-bottom:40px!important}.stage2-service .seo-cta-strip{margin:42px 0!important;padding:40px 0!important}}
+
+/* Compact, aligned blog hub transition into the article grid. */
+.stage2-page .blog-intro-panel{align-items:start!important;margin-bottom:0!important;padding-top:0!important;padding-bottom:0!important}
+.stage2-page .blog-section-heading{position:relative;z-index:0;display:block!important;margin:36px 0 0!important;padding:48px 0 0!important;text-align:left}
+.stage2-page .blog-section-heading::before{content:"";position:absolute;z-index:-1;top:0;right:50%;bottom:-48px;left:50%;width:100vw;transform:translateX(-50%);background:#fff}
+.stage2-page .blog-section-heading h2{margin:0!important}
+.stage2-page .blog-section-heading p{max-width:700px;margin:10px 0 0!important;text-align:left!important}
+.stage2-page .blog-card-grid{margin-top:0!important;padding-top:40px!important}
+@media(max-width:760px){.stage2-page .blog-section-heading{margin-top:30px!important;padding-top:38px!important}.stage2-page .blog-section-heading::before{bottom:-36px}.stage2-page .blog-card-grid{margin-top:0!important;padding-top:30px!important}}
