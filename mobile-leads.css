@@ -1,0 +1,92 @@
+/* Probate Home Buyer: mobile conversion refresh, 25 November 2026.
+   Mobile only. Desktop design and all other pages stay on style.css. */
+.phb-mobile-trust, .phb-mobile-reassurance, .phb-mobile-help { display:none; }
+@media (max-width:760px) {
+  body.stage2-home { overflow-x:clip; background:#faf9f6!important; color:#112d43!important; }
+  .stage2-home .site-header { position:relative; z-index:100; background:#fffdf9!important; border-bottom:1px solid #e9e4db!important; box-shadow:0 2px 13px rgba(12,39,58,.04)!important; }
+  .stage2-home .site-header .nav { min-height:74px!important; height:74px!important; gap:8px!important; }
+  .stage2-home .logo-link { min-width:0!important; padding:0!important; }
+  .stage2-home .logo-img { height:60px!important; max-height:60px!important; width:auto!important; max-width:140px!important; object-fit:contain; }
+  .stage2-home .mobile-actions { display:flex!important; align-items:center!important; gap:8px!important; margin-left:auto!important; }
+  .stage2-home .mobile-phone, .stage2-home .mobile-toggle { display:flex!important; align-items:center!important; justify-content:center!important; width:43px!important; height:43px!important; min-width:43px!important; min-height:43px!important; }
+  .stage2-home .mobile-phone { background:#f7edd7!important; border-radius:50%!important; border:1px solid #e5d3ac!important; color:#112d43!important; box-shadow:none!important; }
+  .stage2-home .mobile-toggle { flex-direction:column!important; gap:5px!important; border-radius:50%!important; border:1px solid #e4e2dd!important; background:#fff!important; }
+  .stage2-home .mobile-toggle span { width:23px!important; height:2px!important; border-radius:2px!important; background:#112d43!important; }
+  .stage2-home .mobile-menu { top:74px!important; left:12px!important; right:12px!important; max-height:calc(100dvh - 84px)!important; overflow:auto!important; background:#fffdf9!important; padding:10px!important; border-radius:14px!important; box-shadow:0 14px 38px rgba(8,31,46,.15)!important; }
+  .stage2-home .mobile-menu a { min-height:44px; display:flex; align-items:center; padding:10px 14px!important; font-size:15px!important; line-height:1.4!important; }
+  .stage2-home main.home-redesign { overflow:hidden; }
+  .stage2-home .phb-hero-redesign.phb-approved-hero { position:relative; display:block!important; min-height:0!important; margin:0!important; padding:32px 0 29px!important; background:#faf6ee!important; background-image:none!important; color:#112d43!important; text-align:left!important; isolation:isolate; }
+  .stage2-home .phb-hero-redesign.phb-approved-hero::before,
+  .stage2-home .phb-hero-redesign.phb-approved-hero::after { display:none!important; content:none!important; }
+  .stage2-home .phb-hero-redesign .phb-hero-bg { display:none!important; }
+  .stage2-home .phb-hero-redesign .phb-hero-content { box-sizing:border-box!important; display:flex!important; flex-direction:column!important; align-items:stretch!important; justify-content:flex-start!important; gap:0!important; width:min(calc(100% - 36px),540px)!important; max-width:540px!important; margin:0 auto!important; padding:0!important; text-align:left!important; transform:none!important; }
+  .stage2-home .phb-hero-redesign .phb-kicker { display:block!important; align-self:flex-start!important; grid-area:auto!important; margin:0 0 15px!important; padding:0!important; border:0!important; background:transparent!important; color:#946d27!important; font-family:inherit!important; font-size:11px!important; line-height:1.3!important; font-weight:850!important; letter-spacing:.14em!important; text-shadow:none!important; }
+  .stage2-home .phb-hero-redesign .phb-hero-content h1 { grid-area:auto!important; max-width:490px!important; margin:0 0 13px!important; padding:0!important; color:#0e2d45!important; font-family:Georgia,"Times New Roman",serif!important; font-size:clamp(33px,9.5vw,43px)!important; line-height:1.075!important; font-weight:700!important; letter-spacing:-.034em!important; text-align:left!important; text-wrap:balance!important; text-shadow:none!important; }
+  .stage2-home .phb-hero-redesign .phb-hero-lead { grid-area:auto!important; margin:0 0 20px!important; max-width:450px!important; padding:0!important; color:#526575!important; font-size:16px!important; line-height:1.55!important; font-weight:450!important; text-align:left!important; text-shadow:none!important; }
+  .stage2-home .phb-hero-redesign .phb-postcode-search { grid-area:auto!important; display:grid!important; grid-template-columns:minmax(0,1fr)!important; gap:10px!important; align-self:stretch!important; box-sizing:border-box!important; width:100%!important; max-width:100%!important; margin:0!important; padding:12px!important; border:1px solid #e7dfd1!important; border-radius:16px!important; background:#fff!important; box-shadow:0 14px 30px rgba(8,38,57,.09)!important; }
+  .stage2-home .phb-hero-redesign .phb-postcode-search .phb-input-wrap { display:flex!important; align-items:center!important; box-sizing:border-box!important; min-width:0!important; width:100%!important; min-height:54px!important; margin:0!important; padding:0 8px!important; background:#fff!important; border:1px solid #d4dce2!important; border-radius:9px!important; box-shadow:none!important; }
+  .stage2-home .phb-hero-redesign .phb-postcode-search input { box-sizing:border-box!important; display:block!important; flex:1 1 auto!important; width:100%!important; min-width:0!important; max-width:100%!important; height:52px!important; min-height:52px!important; margin:0!important; padding:0 8px!important; border:0!important; outline-offset:-3px!important; border-radius:8px!important; background:#fff!important; color:#112d43!important; font-size:16px!important; font-family:inherit!important; line-height:1.2!important; }
+  .stage2-home .phb-hero-redesign .phb-postcode-search input::placeholder { color:#71818d!important; opacity:1!important; }
+  .stage2-home .phb-hero-redesign .phb-postcode-search button { box-sizing:border-box!important; display:flex!important; align-items:center!important; justify-content:center!important; width:100%!important; min-width:0!important; min-height:55px!important; margin:0!important; padding:12px 18px!important; background:#e5bc62!important; background-image:none!important; border:0!important; border-radius:9px!important; box-shadow:none!important; color:#0e2d45!important; font-family:inherit!important; font-size:16px!important; font-weight:850!important; line-height:1.25!important; letter-spacing:0!important; white-space:normal!important; text-align:center!important; text-shadow:none!important; }
+  .stage2-home .phb-hero-redesign .phb-postcode-search button:hover { background:#d9ac4d!important; }
+  .stage2-home .phb-hero-redesign .phb-micro { grid-area:auto!important; display:flex!important; flex-wrap:wrap!important; align-items:center!important; justify-content:flex-start!important; gap:7px 13px!important; margin:15px 0 0!important; padding:0!important; color:#314a5d!important; font-size:12px!important; line-height:1.5!important; font-weight:600!important; text-align:left!important; }
+  .stage2-home .phb-hero-redesign .phb-micro span { display:inline-flex!important; align-items:center!important; width:auto!important; gap:5px!important; margin:0!important; color:#314a5d!important; text-align:left!important; white-space:normal!important; }
+  .stage2-home .phb-hero-redesign .phb-micro span::before { content:"✓"!important; display:inline-grid!important; place-items:center!important; width:15px!important; height:15px!important; flex:0 0 15px!important; border-radius:50%!important; background:#e7ddc6!important; color:#78591f!important; font-size:9px!important; font-weight:850!important; }
+  .stage2-home .phb-mobile-reassurance { display:block!important; margin:10px 0 0!important; color:#62717b!important; font-size:12px!important; line-height:1.35!important; text-align:center!important; }
+  .stage2-home .phb-mobile-trust { box-sizing:border-box!important; display:grid!important; grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important; gap:9px!important; width:100%!important; padding-top:20px!important; margin:20px 0 0!important; border-top:1px solid #e7dfd2!important; }
+  .stage2-home .phb-mobile-trust a { display:flex!important; gap:8px!important; align-items:center!important; justify-content:center!important; min-height:52px!important; padding:10px 8px!important; border-radius:11px!important; background:#fffdf9!important; border:1px solid #e7ddcc!important; color:#123a52!important; text-decoration:none!important; font-size:12px!important; line-height:1.3!important; font-weight:800!important; text-align:center!important; }
+  .stage2-home .phb-mobile-trust a:focus-visible { outline:3px solid #d8a849!important; outline-offset:2px!important; }
+  .stage2-home .phb-mobile-trust .phb-proof-icon { flex:0 0 auto; color:#a77828!important; font-size:19px!important; line-height:1!important; }
+  .stage2-home .phb-slim-trust-strip { display:none!important; }
+  .stage2-home .phb-icon-flow { background:#fff!important; padding:42px 0 45px!important; }
+  .stage2-home main.home-redesign > section:not(.phb-hero-redesign):not(.phb-slim-trust-strip) { padding-top:43px!important; padding-bottom:46px!important; }
+  .stage2-home main.home-redesign > section.phb-icon-flow { padding-top:42px!important; padding-bottom:46px!important; }
+  .stage2-home main.home-redesign .phb-section-title { max-width:none!important; margin:0 0 23px!important; text-align:left!important; }
+  .stage2-home main.home-redesign .phb-section-title>span,
+  .stage2-home main.home-redesign .phb-eyebrow { margin-bottom:8px!important; color:#9b7327!important; font-size:11px!important; letter-spacing:.11em!important; font-weight:800!important; }
+  .stage2-home main.home-redesign h2 { max-width:100%!important; margin:6px 0 13px!important; font-family:Georgia,"Times New Roman",serif!important; font-size:clamp(27px,7.3vw,33px)!important; line-height:1.13!important; letter-spacing:-.025em!important; text-wrap:balance!important; }
+  .stage2-home main.home-redesign .phb-section-title p,
+  .stage2-home main.home-redesign .phb-cash-section p,
+  .stage2-home main.home-redesign .phb-areas-section p { font-size:15px!important; line-height:1.6!important; }
+  .stage2-home .phb-icon-steps { display:grid!important; grid-template-columns:minmax(0,1fr)!important; gap:0!important; max-width:100%!important; margin:0!important; border:1px solid #e9e2d5!important; border-radius:16px!important; overflow:hidden!important; background:#fbfaf6!important; box-shadow:none!important; }
+  .stage2-home .phb-icon-steps article { box-sizing:border-box!important; display:grid!important; grid-template-columns:43px minmax(0,1fr)!important; grid-template-areas:"step-icon step-title" "step-icon step-desc"!important; gap:3px 13px!important; align-items:start!important; justify-items:start!important; min-height:0!important; margin:0!important; padding:18px 16px!important; background:transparent!important; border:0!important; border-radius:0!important; box-shadow:none!important; text-align:left!important; }
+  .stage2-home .phb-icon-steps article+article { border-top:1px solid #e9e2d5!important; border-left:0!important; }
+  .stage2-home .phb-icon-steps .phb-step-icon { grid-area:step-icon!important; display:grid!important; place-items:center!important; width:43px!important; height:43px!important; min-width:43px!important; margin:0!important; padding:10px!important; border:0!important; border-radius:12px!important; background:#f3e9d1!important; }
+  .stage2-home .phb-icon-steps .phb-step-icon svg { box-sizing:border-box!important; width:25px!important; height:25px!important; stroke:#99732d!important; fill:none!important; stroke-width:3px!important; }
+  .stage2-home .phb-icon-steps article h3 { grid-area:step-title!important; margin:0!important; color:#102f47!important; font-size:18px!important; font-family:Georgia,"Times New Roman",serif!important; line-height:1.2!important; text-align:left!important; text-shadow:none!important; }
+  .stage2-home .phb-icon-steps article p { grid-area:step-desc!important; margin:0!important; color:#536879!important; font-size:14px!important; line-height:1.47!important; text-align:left!important; text-shadow:none!important; }
+  .stage2-home .phb-cash-grid { display:grid!important; grid-template-columns:minmax(0,1fr)!important; gap:23px!important; }
+  .stage2-home .phb-cash-section .phb-bullets { display:grid!important; gap:12px!important; margin:19px 0 0!important; }
+  .stage2-home .phb-cash-section .phb-bullets>div { font-size:14px!important; line-height:1.5!important; }
+  .stage2-home .phb-offer-panel { box-sizing:border-box!important; width:100%!important; max-width:100%!important; padding:23px 21px!important; border-radius:16px!important; box-shadow:none!important; }
+  .stage2-home .phb-offer-panel h3 { font-size:24px!important; line-height:1.18!important; }
+  .stage2-home .phb-offer-panel p { font-size:14px!important; line-height:1.55!important; }
+  .stage2-home .phb-offer-panel .phb-panel-btn,
+  .stage2-home .phb-final-cta a { box-sizing:border-box!important; display:flex!important; align-items:center!important; justify-content:center!important; min-height:50px!important; width:100%!important; padding:13px 17px!important; border-radius:10px!important; background:#e5bc62!important; color:#0e2d45!important; font-weight:850!important; text-align:center!important; box-shadow:none!important; }
+  .stage2-home .phb-situation-grid { display:grid!important; grid-template-columns:minmax(0,1fr)!important; gap:10px!important; margin-top:16px!important; }
+  .stage2-home .phb-situation-grid article,
+  .stage2-home .phb-situation-grid .phb-situation-card { box-sizing:border-box!important; min-height:0!important; padding:20px 19px!important; border:1px solid #e8e1d7!important; border-radius:13px!important; background:#fff!important; box-shadow:none!important; }
+  .stage2-home .phb-situation-grid article h3,
+  .stage2-home .phb-situation-grid .phb-situation-card h3 { margin:0 0 7px!important; color:#13344b!important; font-size:18px!important; line-height:1.25!important; }
+  .stage2-home .phb-situation-grid article p,
+  .stage2-home .phb-situation-grid .phb-situation-card p { margin:0!important; font-size:14px!important; color:#586979!important; line-height:1.55!important; }
+  .stage2-home .phb-area-links { display:flex!important; flex-wrap:wrap!important; gap:8px!important; margin-top:20px!important; }
+  .stage2-home .phb-area-links a { display:inline-flex!important; min-height:43px!important; align-items:center!important; justify-content:center!important; padding:10px 13px!important; border-radius:10px!important; font-size:13px!important; }
+  .stage2-home .phb-final-cta .container { box-sizing:border-box!important; padding:26px 21px!important; border-radius:16px!important; }
+  .stage2-home .phb-final-cta h2 { color:#fff!important; }
+  .stage2-home .phb-final-cta p { font-size:14px!important; line-height:1.55!important; }
+  .stage2-home .site-footer { padding-top:36px!important; }
+  .stage2-home .footer-grid { gap:18px!important; }
+  .stage2-home .footer-column h3, .stage2-home .footer-brand h3 { margin-bottom:8px!important; }
+  .stage2-home .phb-mobile-help { display:block!important; margin:13px 0 0!important; text-align:center!important; color:#43596b!important; font-size:13px!important; }
+  .stage2-home .phb-mobile-help a { color:#0e3852!important; font-weight:800!important; text-decoration:underline!important; text-underline-offset:3px!important; }
+  .stage2-home .whatsapp-chat { right:12px!important; bottom:12px!important; width:49px!important; height:49px!important; }
+  .stage2-home .phb-hero-redesign a:focus-visible,
+  .stage2-home .phb-hero-redesign button:focus-visible { outline:3px solid #d4a449!important; outline-offset:3px!important; }
+}
+@media (max-width:365px) {
+  .stage2-home .phb-hero-redesign .phb-hero-content h1 { font-size:32px!important; }
+  .stage2-home .phb-mobile-trust { grid-template-columns:1fr!important; }
+  .stage2-home .phb-hero-redesign .phb-postcode-search { padding:10px!important; }
+  .stage2-home .phb-hero-redesign .phb-micro { gap:6px 10px!important; }
+}
